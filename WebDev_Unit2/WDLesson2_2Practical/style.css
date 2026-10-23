@@ -16,7 +16,7 @@ with a class of "info" */
 }
 /* Challenge 7: Add a border of 2px solid red for all elements with a class of "highlight" */
 .highlight{
-  border-color:red;border-width: 2;
+  border: 2px red solid;
 }
 /* Challenge 8: Align the text in the center and drop a shadow on the text of 2px 2px yellow  for 
 all elements with a class of "special"
@@ -27,5 +27,5 @@ all elements with a class of "special"
 /* Challenge Bonus: Create a CSS rule for a class named "shadow".  
 Apply a shadow to the box around the elements that is 2px 2px  gray. */ 
 .shadow{
-  box-shadow: 2 2 gray;
+  box-shadow: gray 2px 2px;
 }
