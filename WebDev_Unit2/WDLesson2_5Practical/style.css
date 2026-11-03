@@ -12,7 +12,7 @@
                 using a hexdecimal value. 
 */
 .subbanner{
-    background-color: #ff0000;
+    background-color:#ff0000;
 }
 /* Challenge 11: Change the radius of the border to 6px and height to 200px for all images inside of all 
                  elements with a class of gallery 
@@ -24,13 +24,13 @@
 /* Challenge 12: When the visitor moves their mouse over images inside of the element with an id of firstGallery,
                  apply some type of styling using the filter( ) effect
 */
-#firstGallery:hover{
+#firstGallery img:hover{
     filter:blur(5px);
 }
 /* Challenge 13: When the visitor moves their mouse over images inside of the element with an id of secondGallery,
                  apply some other type of styling.
 */
-#secondGallery img{
+#secondGallery img:hover{
     filter:grayscale(100%);
 }
 /* Challenge 14: Change the transition for all elements to 1 second */
