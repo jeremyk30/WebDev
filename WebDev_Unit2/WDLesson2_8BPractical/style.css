@@ -1,2 +1,58 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
+   html, body{
+  height:100%;
+  font-family:Arial;
+  margin:0 auto;
+}
+/*Flex Value Class*/
+.container{
+  display:flex;
+}
+/*Value of Column*/
+.column{
+  flex-direction:column;
+}
+/*Middle Middle Value*/
+.center{
+  justify-content:center;
+  align-items:center;
+}
+/*Non-Hover Hyper Links*/
+nav a{
+  flex:1;
+  text-decoration:none;
+  text-align:center;
+  padding:10px;
+  transition:0.5s;
+  background-color:green;
+  color:white;
+  
+  
+}
+/*Hovered Hyper Links*/
+nav a:hover{
+    flex:1;
+    background-color:lightgreen;
+    color:black;
+    transition:0.5s;
+}
+/*Header*/
+#banner{
+   background-color:white;
+   color:black;
+   padding:20px;
+   gap: 1200px;
+}
+#body{
+   padding:50px;
+}
+#links{
+   padding:50px;
+}
+#footer{
+   flex:1;
+   background-color:green;
+   color:white;
+   padding:20px;
+}
