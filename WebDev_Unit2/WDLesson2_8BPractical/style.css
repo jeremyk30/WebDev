@@ -1,25 +1,56 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
-   html, body{
-  height:100%;
+/* 
+min-height makes the element atleast 100% of the brower height
+font-family makes everything arial
+margin of 0 removes the outer spacing & auto means left and right margin are the same
+*/
+html, body{
+  min-height:100%;
   font-family:Arial;
   margin:0 auto;
+}
+/*
+100"vh" means 100% of the brower and 100% means 100% of the parent(div) height
+display:flex; maked the body a flex container
+flex-direction:column; makes the flex items stack vertically
+*/
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
 /*Flex Value Class*/
 .container{
   display:flex;
 }
-/*Value of Column*/
+/*The Container of column list "Parent of Child items"*/
 .column{
+  box-shadow: 0px 0px 7px black;
+  display:flex;
   flex-direction:column;
 }
-/*Middle Middle Value*/
+/*Column list child/items*/
+.column a{
+  flex:1;
+  text-decoration:none;
+  color:black;
+  padding:10px;
+}
+/*Column list child/item while hovering*/
+.column a:hover{
+  background-color:lightgreen;
+  color:black;
+  transition:0.5s;
+}
+/*Center-Middle Value*/
 .center{
   justify-content:center;
   align-items:center;
 }
 /*Non-Hover Hyper Links*/
 nav a{
+  font-size:25px;
   flex:1;
   text-decoration:none;
   text-align:center;
@@ -32,27 +63,26 @@ nav a{
 }
 /*Hovered Hyper Links*/
 nav a:hover{
-    flex:1;
-    background-color:lightgreen;
-    color:black;
-    transition:0.5s;
+  font-size:30px;
+  flex:1;
+  background-color:lightgreen;
+  color:black;
+  transition:0.5s;
 }
 /*Header*/
 #banner{
-   background-color:white;
-   color:black;
-   padding:20px;
-   gap: 1200px;
+  background-color:white;
+  color:black;
+  padding:20px;
+  justify-content:space-between;
 }
-#body{
-   padding:50px;
-}
-#links{
-   padding:50px;
-}
+/*Footer*/
 #footer{
-   flex:1;
    background-color:green;
    color:white;
-   padding:20px;
+   padding:40px;
+}
+
+#body{
+  flex:1;
 }
